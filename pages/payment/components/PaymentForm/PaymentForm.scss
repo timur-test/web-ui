@@ -1,0 +1,54 @@
+@import '@approck/styles/settings/_colors.scss';
+@import '@approck/styles/generic/_mixins.scss';
+
+.payment-form {
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 40px;
+  width: 100%;
+  max-width: 560px;
+
+  .v-heading {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 24px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -24px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #DADADA;
+    }
+  }
+
+  form {
+    padding: 40px;
+    padding-top: 0;
+  }
+
+  .v-button {
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  .form-control-label {
+    cursor: pointer;
+  }
+}
+
+.payment-form__item {
+  padding: 19px 0;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #DADADA;
+  }
+}

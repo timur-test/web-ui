@@ -1,0 +1,19 @@
+@import '@approck/styles/styles';
+
+.v-container {
+  max-width: 1600px;
+  padding: 0 16px;
+  height: 100%;
+
+  @include tablet-md {
+    padding: 0 24px;
+  }
+
+  @include desktop-xl {
+    padding: 0 50px;
+  }
+}
+
+button {
+  cursor: pointer;
+}

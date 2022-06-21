@@ -1,0 +1,68 @@
+@import '@approck/styles/settings/_colors.scss';
+
+.manual {
+  position: fixed;
+  left: 50px;
+  bottom: 40px;
+  border: 2px solid #DADADA;
+  border-radius: 15px;
+  max-width: 368px;
+  padding: 24px;
+
+  svg {
+    position: absolute;
+    right: 29px;
+    top: 29px;
+    cursor: pointer;
+  }
+}
+
+.manual__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+
+  .v-heading {
+    margin-bottom: 0;
+  }
+}
+
+.manual__step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  margin-right: 16px;
+  font-weight: 600;
+  font-size: 17px;
+  border: 1px solid $gray-color-7;
+  border-radius: 50%;
+}
+
+.manual__indicators {
+  display: flex;
+  position: absolute;
+  left: 24px;
+  top: 85px;
+  width: calc(100% - 48px);
+
+  span {
+    flex-basis: 25%;
+    height: 2px;
+    background-color: $gray-color-6;
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    &.active {
+      background-color: $gray-color-3;
+    }
+  }
+}
+
+.manual__tab-text {
+  font-size: 14px;
+  line-height: 130%;
+  color: $gray-color-5;
+}
